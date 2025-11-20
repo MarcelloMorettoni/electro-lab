@@ -100,9 +100,3 @@ The simulation runs in real time at approximately 60 frames per second.
 
 ### Local Usage
 Clone the repository and open the HTML file in any modern browser.
-
-```bash
-git clone <your-repo-url>
-cd ElectroLab
-open ElectroLab-open.html
-
