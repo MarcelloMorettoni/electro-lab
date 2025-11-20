@@ -1,33 +1,33 @@
-# ⚡ ElectroLab Open
+# ElectroLab Open
 
-A modern, interactive, browser-based electronics simulator built with **HTML5 Canvas**, **TailwindCSS**, and a fully custom **real-time circuit solver**.  
-ElectroLab aims to provide a clean, intuitive interface suitable for learning electronics, prototyping circuits, and experimenting with microcontrollers — all running **client-side with no backend**.
+ElectroLab Open is a modern, browser-based electronics simulator built with HTML5 Canvas, TailwindCSS, and a custom real-time circuit solver.  
+The goal is to provide a clean, intuitive interface suitable for learning electronics, prototyping circuits, and experimenting with microcontrollers — all running client-side with no backend.
 
 ---
 
-## 📸 Demo
+## Demo
 
 ![ElectroLab Screenshot](./screen.png)
 
 ---
 
-## 🚀 Features
+## Features
 
-### 🎛 Interactive Circuit Building
+### Interactive Circuit Building
 - Drag-and-drop components  
 - Snap-to-grid canvas  
 - Visual pins and color-coded wiring  
 - Real-time measurement updates  
-- Smooth pan-free editing area with infinite canvas feel
+- Smooth editing with a simple, minimal interface  
 
-### 🔌 Power Components
-- DC Battery (AA / 9V)
+### Power Components
+- Batteries (AA and 9V)
 - Variable DC supply
-- AC supply (sine)
+- AC source (sine wave)
 - Solar cell
 - Function generator
 
-### 🎚 Passive Components
+### Passive Components
 - Resistor  
 - Potentiometer  
 - Capacitor  
@@ -35,60 +35,74 @@ ElectroLab aims to provide a clean, intuitive interface suitable for learning el
 - Thermistor  
 - LDR
 
-### 🎛 Switches & Relays
+### Switches and Relays
 - SPST switch  
 - Push button  
-- Relay (SPDT)
+- SPDT relay
 
-### 📡 Diodes & Rectifiers
-- Diode  
+### Diodes and Rectifiers
+- Standard diode  
 - LED  
 - RGB LED  
 - Bridge rectifier  
 
-### ⚙ Transistors
+### Transistors
 - NPN BJT  
-- N-MOSFET  
+- N-channel MOSFET  
 
-### 🔩 Analog ICs
-- Op-Amp (741)  
-- 7805 regulator  
+### Analog ICs
+- 741 operational amplifier  
+- 7805 voltage regulator  
 
-### 🔢 Digital & Logic
+### Digital and Logic Components
 - AND gate  
 - NOT gate  
-- 555 Timer  
+- 555 timer  
 
-### 🔍 Sensors
+### Sensors
 - Ultrasonic sensor  
 
-### 🌀 Actuators
-- DC Motor  
+### Actuators
+- DC motor  
 - Servo motor  
-- Piezo buzzer  
+- Buzzer  
 
-### 🖥 Displays
+### Displays
 - 7-segment display  
-- LCD 16×2 (I²C-style simplified)
+- LCD 16×2 (simplified I²C model)
 
-### 🧠 Microcontroller
-- Arduino UNO (abstract pins)
+### Microcontroller
+- Arduino Uno (abstract pins)
 
-### 🔎 Measurement Tools
+### Measurement Tools
 - Voltmeter  
-- Oscilloscope (live waveform rendering)
+- Oscilloscope with real-time waveform rendering  
 
-### 🛠 Connectors
+### Connectors
 - Ground  
 - VCC node
 
 ---
 
-## 🧩 Simulation Engine
+## Simulation Engine
 
-ElectroLab includes a custom lightweight solver:
+ElectroLab includes a custom lightweight node-based solver with:
+- Union-Find node grouping  
+- Relaxation voltage solver  
+- AC waveform generation  
+- Component-specific behavior models (LED thresholding, motor RPM, relay coil actuation, 7-segment decoding, oscilloscope sampling)
 
-- Node-based Union-Find engine  
-- Relaxation voltage solver (iterative)  
-- Real-time AC waveform generation  
-- Component-specific state engines:
+The simulation runs in real time at approximately 60 frames per second.
+
+---
+
+## Installation and Usage
+
+### Local Usage
+Clone the repository and open the HTML file in any modern browser.
+
+```bash
+git clone <your-repo-url>
+cd ElectroLab
+open ElectroLab-open.html
+
