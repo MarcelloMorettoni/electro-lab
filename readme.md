@@ -1,6 +1,6 @@
 # ElectroLab Open
 
-ElectroLab Open is a modern, browser-based electronics simulator built with HTML5 Canvas, TailwindCSS, and a custom real-time circuit solver.  
+ElectroLab Open is a simulator built with HTML5 Canvas, TailwindCSS, and a custom real-time circuit solver.  
 The goal is to provide a clean, intuitive interface suitable for learning electronics, prototyping circuits, and experimenting with microcontrollers — all running client-side with no backend.
 
 ---
