@@ -99,4 +99,4 @@ The simulation runs in real time at approximately 60 frames per second.
 ## Installation and Usage
 
 ### Local Usage
-Clone the repository and open the HTML file in any modern browser.
+Clone the repository and open the HTML file ElectroLab-open.html in any modern browser.
