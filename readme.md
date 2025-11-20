@@ -100,3 +100,9 @@ The simulation runs in real time at approximately 60 frames per second.
 
 ### Local Usage
 Clone the repository and open the HTML file ElectroLab-open.html in any modern browser.
+
+### OLED STUDIO
+Experimental, to generate code based upon OLED drawing:
+![ElectroLab Screenshot](./oled-studio.png)
+
+OLED_Studio.html
